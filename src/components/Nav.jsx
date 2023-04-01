@@ -11,8 +11,8 @@ function Nav() {
 
         <div className="navigation">
           <NavLinks
-            offerHref="#offer"
-            aboutHref="#about"
+            aboutHref="#about-section"
+            servicesHref="#services-section"
             contactHref="#"
             classNameContact="contact"
           />
