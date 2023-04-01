@@ -3,6 +3,7 @@ import Nav from "./components/Nav";
 import HeroSection from "./components/HeroSection";
 import Footer from "./components/Footer";
 import AboutSection from "./components/AboutSection";
+import ServicesSection from "./components/ServicesSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <main>
         <HeroSection />
         <AboutSection />
+        <ServicesSection />
       </main>
       <Footer />
     </>
