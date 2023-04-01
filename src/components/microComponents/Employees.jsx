@@ -11,7 +11,7 @@ function Employees() {
       department: "Marketing",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel massa et lacus egestas cursus a non magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a. Integer felis nisi, tempor elementum lorem in, varius pellentesque ligula. Duis efficitur lacinia enim, non tincidunt libero ultrices in.",
-      photo: { photo1 },
+      src: photo1,
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ function Employees() {
       department: "Social Media",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel massa et lacus egestas cursus a non magna. Fusce scelerisque blandit nunc, id malesuada ex lobortis a. Integer felis nisi, tempor elementum lorem in, varius pellentesque ligula. Duis efficitur lacinia enim, non tincidunt libero ultrices in.",
-      photo: { photo2 },
+      src: photo2,
     },
   ];
 
@@ -30,7 +30,7 @@ function Employees() {
         <div className="our-team">
           <div
             className="person"
-            // style={{ backgroundImage: `url(${employee.photo})` }}
+            style={{ backgroundImage: `url(${employee.src})` }}
           ></div>
           <div className="person-description">
             <p className="strong space-bottom">
