@@ -103,7 +103,6 @@ section:not(#hero-section) {
 }
 
 #hero-section {
-  background-image: url();
   background-position: center;
   background-size: cover;
   position: relative;
