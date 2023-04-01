@@ -157,13 +157,6 @@ section:not(#hero-section) {
   margin-bottom: 1rem;
 }
 
-.photo-one {
-  background-image: url();
-}
-.photo-two {
-  background-image: url();
-}
-
 .person {
   background-size: cover;
   background-position: center;
