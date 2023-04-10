@@ -1,5 +1,4 @@
-import React from "react";
-import SingleService from "./microComponents/SingleService";
+import SingleService from "../data/SingleService";
 
 const offers = [
   {
@@ -41,7 +40,13 @@ function ServicesSection() {
         <h2 className="white">Czym zajmuje się nasza firma?</h2>
         <div className="services">
           {offers.map((offer) => {
-            return <SingleService title={offer.title} isNew={offer.isNew} />;
+            return (
+              <SingleService
+                key={offer.id}
+                title={offer.title}
+                isNew={offer.isNew}
+              />
+            );
           })}
         </div>
       </div>

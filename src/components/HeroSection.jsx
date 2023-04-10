@@ -1,4 +1,3 @@
-import React from "react";
 import background from "../assets/img/bg.jpg";
 
 function HeroSection() {
@@ -7,13 +6,13 @@ function HeroSection() {
       id="hero-section"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="hero">
-          <h1 class="white">
+      <div className="overlay"></div>
+      <div className="container">
+        <div className="hero">
+          <h1 className="white">
             Nasza firma oferuje najwyższej jakości produkty.
           </h1>
-          <p class="white">Nie wierz nam na słowo - sprawdź</p>
+          <p className="white">Nie wierz nam na słowo - sprawdź</p>
           <a href="#services-section">oferta</a>
         </div>
       </div>

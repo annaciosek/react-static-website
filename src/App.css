@@ -81,11 +81,11 @@ section:not(#hero-section) {
   height: 50px;
 }
 
-.navigation {
+nav {
   display: none;
 }
 
-.navigation a:not(:last-child) {
+nav a:not(:last-child) {
   margin-right: 46px;
 }
 
@@ -237,7 +237,7 @@ section:not(#hero-section) {
     text-align: left;
     margin-bottom: 80px;
   }
-  .navigation {
+  nav {
     display: flex;
   }
   .our-team {
