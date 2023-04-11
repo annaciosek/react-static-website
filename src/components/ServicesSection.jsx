@@ -1,37 +1,4 @@
-import SingleService from "../data/SingleService";
-
-const offers = [
-  {
-    id: 1,
-    title: "Usługa 1",
-    isNew: true,
-  },
-  {
-    id: 2,
-    title: "Usługa 2",
-    isNew: false,
-  },
-  {
-    id: 3,
-    title: "Usługa 3",
-    isNew: false,
-  },
-  {
-    id: 4,
-    title: "Usługa 4",
-    isNew: false,
-  },
-  {
-    id: 5,
-    title: "Usługa 5",
-    isNew: false,
-  },
-  {
-    id: 6,
-    title: "Usługa 6",
-    isNew: false,
-  },
-];
+import { offers } from "../data/SingleService";
 
 function ServicesSection() {
   return (
@@ -41,11 +8,12 @@ function ServicesSection() {
         <div className="services">
           {offers.map((offer) => {
             return (
-              <SingleService
-                key={offer.id}
-                title={offer.title}
-                isNew={offer.isNew}
-              />
+              <div className="services-single" key={offer.id}>
+                <h3>{offer.title}</h3>
+                <div
+                  className={`${offer.isNew ? "services-single-isNew" : ""}`}
+                ></div>
+              </div>
             );
           })}
         </div>
